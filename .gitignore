@@ -1,9 +1,68 @@
-court-env/
+# Python virtual environment
+ai-service/court-venv/
 datasets/
+ai-service/harvard.wav
+
+
+ai-service/__pycache__/
+ai-service/*.pyc
 
 __pycache__/
 *.pyc
-
 .ipynb_checkpoints/
 
 .DS_Store
+
+# HuggingFace cache
+ai-service/.cache/
+~/.cache/huggingface/
+
+# Torch / ML caches
+*.pt
+*.pth
+*.bin
+
+# Go build artifacts
+backend-go/bin/
+backend-go/dist/
+*.exe
+*.out
+
+# Go modules cache (optional but safe)
+backend-go/vendor/
+
+# Database dumps
+*.sql
+*.dump
+
+# Environment variables (CRITICAL)
+.env
+backend-go/.env
+ai-service/.env
+
+# Audio recordings
+storage/
+storage/audio/
+storage/chunks/
+*.wav
+*.mp3
+*.m4a
+
+# AI models cache
+models/
+*.onnx
+*.safetensors
+*.ckpt
+
+# HuggingFace downloaded models
+ai-service/models/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+frontend/node_modules/
+frontend/build/
+
+*.log
+logs/
