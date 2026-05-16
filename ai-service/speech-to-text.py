@@ -1,6 +1,10 @@
 import whisper
-print("Whisper installed successfully")
 
-# model = whisper.load_model("medium.en")
-# result = model.transcribe("harvard.wav")
-# print(result["text"])
+print("Loading Whisper model...")
+
+model = whisper.load_model("medium.en")
+print("Model loaded, Transcribing...")
+result = model.transcribe("samples/harvard.wav")
+
+print("\nTRANSCRIPTION:")
+print(result["text"])

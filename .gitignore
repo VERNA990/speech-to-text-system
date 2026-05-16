@@ -1,7 +1,7 @@
 # Python virtual environment
 ai-service/court-venv/
 datasets/
-ai-service/harvard.wav
+ai-service/samples
 
 
 ai-service/__pycache__/
